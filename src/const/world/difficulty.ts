@@ -19,13 +19,13 @@ export const DIFFICULTY = {
   ASSISTANT_SPEED_GROWTH: 0.015, // Assistant speed growth by player level
   ASSISTANT_HEALTH: 200, // Default assistant health
   ASSISTANT_HEALTH_GROWTH: 0.1, // Assistant health growth by player level
-  ASSISTANT_ATTACK_DAMAGE: 150, // Default assistant damage
+  ASSISTANT_ATTACK_DAMAGE: 450, // Default assistant damage
   ASSISTANT_ATTACK_DAMAGE_GROWTH: 0.2, // Assistant damage growth by player level
-  ASSISTANT_ATTACK_SPEED: 500, // Assistant attack speed
+  ASSISTANT_ATTACK_SPEED: 5000, // Assistant attack speed
   ASSISTANT_ATTACK_SPEED_GROWTH: 0.1, // Attack speed growth by player level
-  ASSISTANT_ATTACK_DISTANCE: 70, // Assistant maximum attack distance
-  ASSISTANT_ATTACK_DISTANCE_GROWTH: 0.03, // Attack distance growth by player level
-  ASSISTANT_ATTACK_PAUSE: 10, // Assistant attack pause
+  ASSISTANT_ATTACK_DISTANCE: 300, // Assistant maximum attack distance
+  ASSISTANT_ATTACK_DISTANCE_GROWTH: 2, // Attack distance growth by player level
+  ASSISTANT_ATTACK_PAUSE: 20, // Assistant attack pause
   ASSISTANT_ATTACK_PAUSE_GROWTH: -0.05, // Attack pause growth by player level
 
   /**
@@ -99,8 +99,8 @@ export const DIFFICULTY = {
 
   BUILDING_TOWER_FIRE_COST: 3, // Tower fire cost
   BUILDING_TOWER_FIRE_HEALTH: 6000, // Default tower fire health
-  BUILDING_TOWER_FIRE_ATTACK_RADIUS: 1900, // Tower fire attack radius
-  BUILDING_TOWER_FIRE_ATTACK_PAUSE: 1400, // Tower fire pause between attacks
+  BUILDING_TOWER_FIRE_ATTACK_RADIUS: 100, // Tower fire attack radius
+  BUILDING_TOWER_FIRE_ATTACK_PAUSE: 200, // Tower fire pause between attacks
   BUILDING_TOWER_FIRE_ATTACK_DAMAGE: 350, // Tower fire attack damage
   BUILDING_TOWER_FIRE_ATTACK_SPEED: 550, // Tower fire attack speed
 
@@ -111,8 +111,8 @@ export const DIFFICULTY = {
   BUILDING_TOWER_FROZEN_COST: 40, // Tower frozen cost
   BUILDING_TOWER_FROZEN_HEALTH: 900, // Default tower frozen health
   BUILDING_TOWER_FROZEN_ALLOW_BY_WAVE: 3, // Minimal wave for allow tower frozen
-  BUILDING_TOWER_FROZEN_FREEZE_RADIUS: 180, // Tower frozen freeze radius
-  BUILDING_TOWER_FROZEN_FREEZE_PAUSE: 1400, // Tower frozen pause between freezs
+  BUILDING_TOWER_FROZEN_FREEZE_RADIUS: 120, // Tower frozen freeze radius
+  BUILDING_TOWER_FROZEN_FREEZE_PAUSE: 200, // Tower frozen pause between freezs
   BUILDING_TOWER_FROZEN_FREEZE_DURATION: 900, // Tower frozen freeze duration
   BUILDING_TOWER_FROZEN_FREEZE_SPEED: 550, // Tower frozen freeze speed
 
@@ -123,8 +123,8 @@ export const DIFFICULTY = {
   BUILDING_TOWER_LAZER_COST: 5, // Tower lazer cost
   BUILDING_TOWER_LAZER_HEALTH: 3000, // Default tower lazer health
   BUILDING_TOWER_LAZER_ALLOW_BY_WAVE: 5, // Minimal wave for allow tower lazer
-  BUILDING_TOWER_LAZER_ATTACK_RADIUS: 1600, // Tower lazer attack radius
-  BUILDING_TOWER_LAZER_ATTACK_PAUSE: 16, // Tower lazer pause between attacks
+  BUILDING_TOWER_LAZER_ATTACK_RADIUS: 120, // Tower lazer attack radius
+  BUILDING_TOWER_LAZER_ATTACK_PAUSE: 200, // Tower lazer pause between attacks
   BUILDING_TOWER_LAZER_ATTACK_DAMAGE: 650, // Tower lazer attack damage
 
   /**
@@ -143,12 +143,12 @@ export const DIFFICULTY = {
    */
 
   BUILDING_AMMUNITION_COST: 30, // Ammunition cost
-  BUILDING_AMMUNITION_HEALTH: 300, // Ammunition health
+  BUILDING_AMMUNITION_HEALTH: 3000, // Ammunition health
   BUILDING_AMMUNITION_LIMIT: 4, // Maximum count ammunition on world (N * wave_season)
   BUILDING_AMMUNITION_ALLOW_BY_WAVE: 2, // Minimal wave for allow ammunition
-  BUILDING_AMMUNITION_RELOAD_RADIUS: 150, // Ammunition reload ammo radius
-  BUILDING_AMMUNITION_AMMO: 170, // Maximum amount of ammo
-  BUILDING_AMMUNITION_AMMO_UPGRADE: 120, // Amount of ammo added per upgrade (N * upgrade_level)
+  BUILDING_AMMUNITION_RELOAD_RADIUS: 450, // Ammunition reload ammo radius
+  BUILDING_AMMUNITION_AMMO: 3000, // Maximum amount of ammo
+  BUILDING_AMMUNITION_AMMO_UPGRADE: 1000, // Amount of ammo added per upgrade (N * upgrade_level)
 
   /**
    * Building: Medic
