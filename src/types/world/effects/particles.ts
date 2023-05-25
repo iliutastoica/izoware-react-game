@@ -36,6 +36,7 @@ export enum ParticlesTexture {
   GLOW = 'effect/glow',
 }
 
+//@ts-ignore
 export type ParticlesList = Partial<Record<ParticlesType, Phaser.GameObjects.Particles.ParticleEmitterManager>>;
 
 export type ParticlesData = {

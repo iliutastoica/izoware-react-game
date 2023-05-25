@@ -281,6 +281,7 @@ export class World extends Phaser.Scene implements IWorld {
 
   private registerParticles() {
     for (const effect of Object.values(ParticlesType)) {
+      //@ts-ignore
       const particles = this.add.particles(ParticlesTexture[effect]);
 
       particles.setDepth(WORLD_DEPTH_EFFECT);
