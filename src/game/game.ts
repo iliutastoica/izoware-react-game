@@ -30,18 +30,18 @@ export class Game extends Phaser.Game implements IGame {
 
   private set isStarted(v) { this._isStarted = v; }
 
-  private isPausedVar: boolean = false;
+  private _isPaused: boolean = false;
 
   //@ts-ignore
-  public get isPaused() { return this.isPausedVar; }
+  public get isPaused() { return this._isPaused; }
 
-  private set isPaused(v: boolean) { this.isPausedVar = v; }
+  private set isPaused(v) { this._isPaused = v; }
 
   private _isFinished: boolean = false;
 
   public get isFinished() { return this._isFinished; }
 
-  private set isFinished(v: boolean) { this._isFinished = v; }
+  private set isFinished(v) { this._isFinished = v; }
 
   private _menu: IMenu;
 
@@ -116,7 +116,7 @@ export class Game extends Phaser.Game implements IGame {
   }
 
   public pauseGame() {
-    this.isPausedVar = true;
+    this.isPaused = true;
 
     this.world.scene.pause();
     this.screen.scene.pause();
@@ -125,7 +125,7 @@ export class Game extends Phaser.Game implements IGame {
   }
 
   public resumeGame() {
-    this.isPausedVar = false;
+    this.isPaused = false;
 
     this.scene.systemScene.scene.stop(this.menu);
 

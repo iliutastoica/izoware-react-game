@@ -1,1 +1,1 @@
-export const ANALYTICS_SERVER = '';
+export const ANALYTICS_SERVER = 'aaa';
