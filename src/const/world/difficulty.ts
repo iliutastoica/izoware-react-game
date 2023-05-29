@@ -3,10 +3,10 @@ export const DIFFICULTY = {
    * Player
    */
 
-  PLAYER_SPEED: 150, // Default player speed
+  PLAYER_SPEED: 180, // Default player speed
   PLAYER_SPEED_GROWTH: 0.015, // Player speed growth by level
-  PLAYER_HEALTH: 200, // Default player health
-  PLAYER_HEALTH_GROWTH: 0.1, // Player health growth by level
+  PLAYER_HEALTH: 400, // Default player health
+  PLAYER_HEALTH_GROWTH: 0.2, // Player health growth by level
   PLAYER_START_RESOURCES: 900, // Player start resources
   PLAYER_EXPERIENCE_TO_NEXT_LEVEL: 200, // Need experience count to next level
   PLAYER_EXPERIENCE_TO_NEXT_LEVEL_GROWTH: 0.3, // Experience count growth by level
@@ -17,27 +17,27 @@ export const DIFFICULTY = {
 
   ASSISTANT_SPEED: 150, // Default assistant speed
   ASSISTANT_SPEED_GROWTH: 0.015, // Assistant speed growth by player level
-  ASSISTANT_HEALTH: 200, // Default assistant health
-  ASSISTANT_HEALTH_GROWTH: 0.1, // Assistant health growth by player level
+  ASSISTANT_HEALTH: 400, // Default assistant health
+  ASSISTANT_HEALTH_GROWTH: 0.2, // Assistant health growth by player level
   ASSISTANT_ATTACK_DAMAGE: 450, // Default assistant damage
   ASSISTANT_ATTACK_DAMAGE_GROWTH: 0.2, // Assistant damage growth by player level
-  ASSISTANT_ATTACK_SPEED: 5000, // Assistant attack speed
+  ASSISTANT_ATTACK_SPEED: 3000, // Assistant attack speed
   ASSISTANT_ATTACK_SPEED_GROWTH: 0.1, // Attack speed growth by player level
-  ASSISTANT_ATTACK_DISTANCE: 300, // Assistant maximum attack distance
+  ASSISTANT_ATTACK_DISTANCE: 250, // Assistant maximum attack distance
   ASSISTANT_ATTACK_DISTANCE_GROWTH: 2, // Attack distance growth by player level
-  ASSISTANT_ATTACK_PAUSE: 20, // Assistant attack pause
+  ASSISTANT_ATTACK_PAUSE: 50, // Assistant attack pause
   ASSISTANT_ATTACK_PAUSE_GROWTH: -0.05, // Attack pause growth by player level
 
   /**
    * Wave
    */
 
-  WAVE_PAUSE: 20000, // Pause in milliseconds between waves
+  WAVE_PAUSE: 40000, // Pause in milliseconds between waves
   WAVE_PAUSE_GROWTH: 0.12, // Pause growth by wave number
   WAVE_SEASON_LENGTH: 5, // Count of wave numbers in season
   WAVE_ENEMIES_COUNT: 5, // Enemies count on first wave
   WAVE_ENEMIES_COUNT_GROWTH: 0.5, // Enemies count growth by wave number
-  WAVE_ENEMIES_SPAWN_PAUSE: 2300, // Default pause in milliseconds between enemies spawn
+  WAVE_ENEMIES_SPAWN_PAUSE: 6000, // Default pause in milliseconds between enemies spawn
   WAVE_ENEMIES_SPAWN_PAUSE_GROWTH: -0.03, // Enemies spawn pause growth by wave number
   WAVE_EXPERIENCE: 200, // Gained experience per complete wave
   WAVE_EXPERIENCE_GROWTH: 0.1, // Experience count growth by wave number
@@ -58,8 +58,8 @@ export const DIFFICULTY = {
 
   ENEMY_HEALTH: 100, // Enemy default health
   ENEMY_HEALTH_GROWTH: 0.15, // Enemy health growth by wave number
-  ENEMY_SPEED: 100, // Enemy default speed
-  ENEMY_SPEED_GROWTH: 0.056, // Enemy speed growth by wave number
+  ENEMY_SPEED: 80, // Enemy default speed
+  ENEMY_SPEED_GROWTH: 0.015, // Enemy speed growth by wave number
   ENEMY_DAMAGE: 100, // Enemy default damage
   ENEMY_DAMAGE_GROWTH: 0.06, // Enemy damage growth by wave number
   ENEMY_KILL_EXPERIENCE: 10, // Gained experience per kill enemy
@@ -69,12 +69,12 @@ export const DIFFICULTY = {
    * Buildings
    */
 
-  BUILDING_ACTION_RADIUS_GROWTH: 0.2, // Actions radius growth by upgrade
-  BUILDING_ACTION_PAUSE_GROWTH: -0.1, // Actions pause growth by upgrade
+  BUILDING_ACTION_RADIUS_GROWTH: 0.7, // Actions radius growth by upgrade
+  BUILDING_ACTION_PAUSE_GROWTH: -0.2, // Actions pause growth by upgrade
   BUILDING_BUILD_EXPERIENCE: 50, // Gained experience for build
   BUILDING_UPGRADE_EXPERIENCE: 40, // Gained experience per upgrade building (N * upgrade_level)
-  BUILDING_BUILD_AREA: 180, // Default radius of build area
-  BUILDING_BUILD_AREA_GROWTH: 0.05, // Radius growth by level
+  BUILDING_BUILD_AREA: 280, // Default radius of build area
+  BUILDING_BUILD_AREA_GROWTH: 0.5, // Radius growth by level
 
   /**
    * Building: Wall
@@ -99,7 +99,7 @@ export const DIFFICULTY = {
 
   BUILDING_TOWER_FIRE_COST: 3, // Tower fire cost
   BUILDING_TOWER_FIRE_HEALTH: 6000, // Default tower fire health
-  BUILDING_TOWER_FIRE_ATTACK_RADIUS: 100, // Tower fire attack radius
+  BUILDING_TOWER_FIRE_ATTACK_RADIUS: 300, // Tower fire attack radius
   BUILDING_TOWER_FIRE_ATTACK_PAUSE: 200, // Tower fire pause between attacks
   BUILDING_TOWER_FIRE_ATTACK_DAMAGE: 350, // Tower fire attack damage
   BUILDING_TOWER_FIRE_ATTACK_SPEED: 550, // Tower fire attack speed
@@ -111,7 +111,7 @@ export const DIFFICULTY = {
   BUILDING_TOWER_FROZEN_COST: 40, // Tower frozen cost
   BUILDING_TOWER_FROZEN_HEALTH: 900, // Default tower frozen health
   BUILDING_TOWER_FROZEN_ALLOW_BY_WAVE: 3, // Minimal wave for allow tower frozen
-  BUILDING_TOWER_FROZEN_FREEZE_RADIUS: 120, // Tower frozen freeze radius
+  BUILDING_TOWER_FROZEN_FREEZE_RADIUS: 180, // Tower frozen freeze radius
   BUILDING_TOWER_FROZEN_FREEZE_PAUSE: 200, // Tower frozen pause between freezs
   BUILDING_TOWER_FROZEN_FREEZE_DURATION: 900, // Tower frozen freeze duration
   BUILDING_TOWER_FROZEN_FREEZE_SPEED: 550, // Tower frozen freeze speed
@@ -123,7 +123,7 @@ export const DIFFICULTY = {
   BUILDING_TOWER_LAZER_COST: 5, // Tower lazer cost
   BUILDING_TOWER_LAZER_HEALTH: 3000, // Default tower lazer health
   BUILDING_TOWER_LAZER_ALLOW_BY_WAVE: 5, // Minimal wave for allow tower lazer
-  BUILDING_TOWER_LAZER_ATTACK_RADIUS: 120, // Tower lazer attack radius
+  BUILDING_TOWER_LAZER_ATTACK_RADIUS: 180, // Tower lazer attack radius
   BUILDING_TOWER_LAZER_ATTACK_PAUSE: 200, // Tower lazer pause between attacks
   BUILDING_TOWER_LAZER_ATTACK_DAMAGE: 650, // Tower lazer attack damage
 
